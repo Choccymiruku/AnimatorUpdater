@@ -11,6 +11,8 @@ namespace UpdateHierarchy
             Logger.LogInfo("Animator Updater is loaded");
             new UpdateAnimatorPatch1().Enable();
             new UpdateAnimatorPatch2().Enable();
+            new ModSetupPatch1().Enable();
+            new ModSetupPatch2().Enable();
         }
     }
 }
