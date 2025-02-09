@@ -6,4 +6,4 @@
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
 
 # Description
-Updates the weapon Animator upon mag insert, useful for that AA-12 mag that you switch into after using the 8 rounder one.
+Updates the weapon Animator upon mag insert and mod setup, useful for that AA-12 mag that you switch into after using the 8 rounder one or if you have animated mod attachment.
