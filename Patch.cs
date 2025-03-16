@@ -14,11 +14,11 @@ namespace UpdateHierarchy
     {
         protected override MethodBase GetTargetMethod()
         {
-            return AccessTools.Method(typeof(Player.FirearmController.GClass1751), "OnMagAppeared");
+            return AccessTools.Method(typeof(Player.FirearmController.GClass1808), "OnMagAppeared");
         }
 
         [PatchPostfix]
-        static void PatchPostfix(Player.FirearmController.GClass1751 __instance, Player.FirearmController ___firearmController_0)
+        static void PatchPostfix(Player.FirearmController.GClass1808 __instance, Player.FirearmController ___firearmController_0)
         {
             if (___firearmController_0 != null)
             {
@@ -32,11 +32,11 @@ namespace UpdateHierarchy
     {
         protected override MethodBase GetTargetMethod()
         {
-            return AccessTools.Method(typeof(Player.FirearmController.GClass1773), "OnMagAppeared");
+            return AccessTools.Method(typeof(Player.FirearmController.GClass1785), "OnMagAppeared");
         }
 
         [PatchPostfix]
-        static void PatchPostfix(Player.FirearmController.GClass1773 __instance, Player.FirearmController ___firearmController_0)
+        static void PatchPostfix(Player.FirearmController.GClass1785 __instance, Player.FirearmController ___firearmController_0)
         {
             if (___firearmController_0 != null)
             {
@@ -50,12 +50,12 @@ namespace UpdateHierarchy
     {
         protected override MethodBase GetTargetMethod()
         {
-            return AccessTools.Method(typeof(Player.FirearmController.GClass1789), "OnModChanged");
+            return AccessTools.Method(typeof(Player.FirearmController.GClass1821), "OnModChanged");
         }
 
         [PatchPostfix]
         static void PatchPostfix
-        (Player.FirearmController.GClass1789 __instance,
+        (Player.FirearmController.GClass1821 __instance,
             Player.FirearmController ___firearmController_0)
         {
             var weaponPrefab = (WeaponPrefab)AccessTools.Field(___firearmController_0?.GetType(), "weaponPrefab_0")
@@ -68,12 +68,12 @@ namespace UpdateHierarchy
     {
         protected override MethodBase GetTargetMethod()
         {
-            return AccessTools.Method(typeof(Player.FirearmController.Class1131), "OnModChanged");
+            return AccessTools.Method(typeof(Player.FirearmController.Class1145), "OnModChanged");
         }
 
         [PatchPostfix]
         static void PatchPostfix
-        (Player.FirearmController.Class1131 __instance,
+        (Player.FirearmController.Class1145 __instance,
             Player.FirearmController ___firearmController_0)
         {
             var weaponPrefab = (WeaponPrefab)AccessTools.Field(___firearmController_0?.GetType(), "weaponPrefab_0")

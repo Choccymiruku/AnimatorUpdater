@@ -13,6 +13,7 @@ namespace UpdateHierarchy
             new UpdateAnimatorPatch2().Enable();
             new ModSetupPatch1().Enable();
             new ModSetupPatch2().Enable();
+            //new InventoryReloadPatch().Enable();
         }
     }
 }

@@ -8,49 +8,46 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <Reference Include="0Harmony20">
-      <HintPath>F:\SPT 0.15\BepInEx\core\0Harmony20.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\core\0Harmony20.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>ref\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>ref\BepInEx.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Harmony">
-      <HintPath>ref\BepInEx.Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="BepInEx.Preloader">
-      <HintPath>ref\BepInEx.Preloader.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\core\BepInEx.Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Comfort">
-      <HintPath>F:\SPT\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
     </Reference>
     <Reference Include="spt-common">
-      <HintPath>F:\SPT 0.15\BepInEx\plugins\spt\spt-common.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-common.dll</HintPath>
     </Reference>
     <Reference Include="spt-core">
-      <HintPath>F:\SPT 0.15\BepInEx\plugins\spt\spt-core.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-core.dll</HintPath>
     </Reference>
     <Reference Include="spt-custom">
-      <HintPath>F:\SPT 0.15\BepInEx\plugins\spt\spt-custom.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-custom.dll</HintPath>
     </Reference>
     <Reference Include="spt-debugging">
-      <HintPath>F:\SPT 0.15\BepInEx\plugins\spt\spt-debugging.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-debugging.dll</HintPath>
     </Reference>
     <Reference Include="spt-reflection">
-      <HintPath>F:\SPT 0.15\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
     </Reference>
     <Reference Include="spt-singleplayer">
-      <HintPath>F:\SPT 0.15\BepInEx\plugins\spt\spt-singleplayer.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-singleplayer.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>ref\UnityEngine.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>ref\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
