@@ -9,10 +9,10 @@ namespace UpdateHierarchy
         {
             // Plugin startup logic
             Logger.LogInfo("Animator Updater is loaded");
-            new UpdateAnimatorPatch1().Enable();
-            new UpdateAnimatorPatch2().Enable();
-            new ModSetupPatch1().Enable();
-            new ModSetupPatch2().Enable();
+            //new UpdateAnimatorPatch1().Enable(); This one does not have any effect
+            new UpdateAnimatorPatch2().Enable(); //this one has it but desync the hand
+            //new ModSetupPatch1().Enable(); //this one has no effect
+            new ModSetupPatch2().Enable(); //this one have the effect
             //new InventoryReloadPatch().Enable();
         }
     }
