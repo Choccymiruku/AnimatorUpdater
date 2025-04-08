@@ -32,11 +32,10 @@ namespace UpdateHierarchy
     }
     
     //this patch is the one that has effect on reloading, but also desync the hands on certain weapons i do not know why.
-    //TODO: make a list to store weapons that should NOT run the update hierarchy
-    //TODO: Figure out how the hell does the array thingie not work
+    //Note for future: if you want a if check that uses array, do not use a loop. Thanks CJ for helping me out
     public class UpdateAnimatorPatch2 : ModulePatch
     {
-        public static readonly String[] ExcludeList = 
+        public static readonly string[] ExcludeList = 
         [ "5ba26383d4351e00334c93d9", 
             "5ac4cd105acfc40016339859", 
             "5de652c31b7e3716273428be"
@@ -57,19 +56,18 @@ namespace UpdateHierarchy
             {
                 var weaponPrefab = (WeaponPrefab) AccessTools.Field(___firearmController_0.GetType(), "weaponPrefab_0").GetValue(___firearmController_0);
                 var weapon = (Weapon)AccessTools.Field(weaponPrefab.GetType(), "weapon_0").GetValue(weaponPrefab);
-                /*foreach (String str in ExcludeList)
+                if (ExcludeList.Contains(weapon.Template._id.ToString()))
                 {
-                    if (weapon.Template._id != str)
-                    {
-                        weaponPrefab.UpdateAnimatorHierarchy();
-                        Logger.LogInfo("This method is supposed to run when weapon outside of the list is used");
-                    }
-                }*/
-                if(weapon.Template._id != MP7 || weapon.Template._id != AK74M || weapon.Template._id != Gornostay)
+                    return;
+                }
+                weaponPrefab.UpdateAnimatorHierarchy();
+                //Logger.LogInfo("This method is supposed to run when weapon outside of the list is used");
+                
+                /*if(weapon.Template._id != MP7 || weapon.Template._id != AK74M || weapon.Template._id != Gornostay)
                 {
                     weaponPrefab.UpdateAnimatorHierarchy();
                     Logger.LogInfo("This method is supposed to run when weapon outside of the list is used");
-                }
+                }*/
             }
         }
     }
@@ -109,22 +107,19 @@ namespace UpdateHierarchy
             var weaponPrefab = (WeaponPrefab)AccessTools.Field(___firearmController_0?.GetType(), "weaponPrefab_0")
                 .GetValue(___firearmController_0);
             var weapon = (Weapon)AccessTools.Field(weaponPrefab.GetType(), "weapon_0").GetValue(weaponPrefab);
-            /*foreach (String str in UpdateAnimatorPatch2.ExcludeList)
+            if (UpdateAnimatorPatch2.ExcludeList.Contains(weapon.Template._id.ToString()))
             {
-                if (weapon.Template._id != str)
-                {
-                    weaponPrefab.UpdateAnimatorHierarchy();
-                    Logger.LogInfo("This method is supposed to run when weapon outside of the list is used");
-                }
-            }*/
-            
-            if(weapon.Template._id != UpdateAnimatorPatch2.MP7 || 
+                return;
+            }
+            weaponPrefab.UpdateAnimatorHierarchy();
+            //Logger.LogInfo("This method is supposed to run when weapon outside of the list is used");
+            /*if(weapon.Template._id != UpdateAnimatorPatch2.MP7 || 
                weapon.Template._id != UpdateAnimatorPatch2.AK74M || 
                weapon.Template._id != UpdateAnimatorPatch2.Gornostay)
             {
                 weaponPrefab.UpdateAnimatorHierarchy();
                 Logger.LogInfo("This method is supposed to run when weapon outside of the list is used");
-            }
+            }*/
         }
     }
 }
