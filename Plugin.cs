@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace UpdateHierarchy
 {
-    [BepInPlugin("com.choccy.updatehierarchy", "Choccy.AnimatorUpdate", "1.0.2")]
+    [BepInPlugin("com.choccy.updatehierarchy", "Choccy.AnimatorUpdate", "1.0.3")]
     public class Plugin : BaseUnityPlugin
     {
         private void Awake()
